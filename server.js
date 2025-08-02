@@ -33,6 +33,7 @@ app.post('/api/quotes', (req, res, next) => {
     //res.quote.quote = quoteAdd
     //res.quote.person = personAdd
     res.send({ quote: quoteAdd, person: personAdd })
+    
 })
 
 
