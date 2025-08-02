@@ -30,7 +30,9 @@ app.post('/api/quotes', (req, res, next) => {
     const quoteAdd = req.query.quote
     console.log({ quote: quoteAdd, person: personAdd })
     quotes.push({ quote: quoteAdd, person: personAdd })
-    res.send()
+    //res.quote.quote = quoteAdd
+    //res.quote.person = personAdd
+    res.send({ quote: quoteAdd, person: personAdd })
 })
 
 
